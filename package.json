@@ -1,0 +1,31 @@
+{
+  "name": "Neon Test",
+  "version": "1.0.0",
+  "description": "A test for Neon",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp sass"
+  },
+  "author": "Amanda Vilela",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amandavilela/neon-test/issues"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "foundation-sites": "~6.4.0",
+    "motion-ui": "~1.2.2",
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sass": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amandavilela/neon-test.git"
+  },
+  "private": true
+}
