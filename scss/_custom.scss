@@ -1,0 +1,185 @@
+.saldo {
+  background: $container-bg;
+  padding: 10px 15px;
+
+  &__header {
+    position: relative;
+  }
+
+  &__logo {
+
+    @include breakpoint(medium) {
+      background-image: url('../imgs/neon-logo-02.png');
+      width: 135px;
+      height: 30px;
+    }
+
+    background-image: url('../imgs/neon-logo-01.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    padding: 20px 0;
+  }
+
+  &__valor {
+
+    span {
+      @include breakpoint(medium) {
+        display: inline-block;
+      }
+
+      display: none;
+    }
+
+    text-align: center;
+    font-size: $balance-font-size;
+    font-weight: $balance-font-weigth;
+  }
+
+  &__info {
+
+    &__year {
+      text-align: center;
+      display: block;
+
+      &:after {
+        content: "";
+        display: block;
+        position: relative;
+        width: 32%;
+        height: 1px;
+        background: linear-gradient(to right, $container-bg, $green, $container-bg);
+        margin: 8px auto;
+        border-radius: 50%;
+      }
+    }
+
+    &__greeting {
+      font-size: $lead-font-size;
+      font-weight: bold;
+      text-align: center;
+    }
+
+  }
+
+  &__carousel {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    flex-flow: row;
+
+    &__card {
+      border-radius: 8px;
+      margin: 0 30px;
+      opacity: 0.5;
+
+      &--light-blue {
+        background: $light-blue;
+      }
+
+      &--calendar {
+        background-image: url('../imgs/icon-calendar.png');
+        background-position: center center;
+        background-color: $calendar-bg;
+        background-repeat: no-repeat;
+      }
+
+    }
+
+    .middle {
+      order: 2;
+      opacity: 1;
+    }
+
+    .left {
+      order: 1;
+    }
+
+    .right {
+      order: 3;
+    }
+
+    &__list {
+
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: flex;
+        padding: 5px 18px;
+        justify-content: space-between;
+        width: 100%;
+        border-top: solid 1px $border-light-blue;
+        margin: 0;
+
+        &:first-child {
+          border-top: none;
+        }
+
+      }
+
+      .icon-category {
+        background: url('../imgs/icon-categoria.png') center left no-repeat;
+        width: 30px;
+        height: 30px;
+        margin: auto 0;
+      }
+
+      .description {
+        flex-grow: 1;
+        padding: 4px 15px;
+      }
+
+      .value {
+        margin: 0;
+        font-weight: bold;
+
+        &--positive {
+          color: $green;
+        }
+      }
+
+      .delete-purshase {
+        background: url('../imgs/icon-delete.png') center center no-repeat;
+        display: block;
+        width: 15px;
+        height: 22px;
+        margin: auto 0;
+      }
+
+    }
+
+    &__options {
+      list-style: none;
+      padding: 0;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+
+      li {
+        width: 15px;
+        height: 15px;
+        border: solid 1px $white;
+        border-radius: 3px;
+        margin: 4px;
+
+        &.active-option {
+          border-color: $border-light-blue;
+        }
+
+      }
+
+    }
+
+  }
+
+}
