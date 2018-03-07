@@ -54,4 +54,17 @@
     }
   });
 
+  const deleteButtons = document.querySelectorAll(".delete-purshase");
+
+  deleteButtons.forEach(d => {
+    d.addEventListener('click', function() {
+      removePurchase(d.getAttribute("data-delete-id"));
+    });
+  })
+
+  const removePurchase = (id) => {
+    let purchase = document.querySelector(`[data-purchase-id=purchase-${id}]`);
+    purchase.style.display = "none";
+  }
+
 })();
