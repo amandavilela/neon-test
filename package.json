@@ -1,5 +1,5 @@
 {
-  "name": "Neon Test",
+  "name": "neon-test",
   "version": "1.0.0",
   "description": "A test for Neon",
   "main": "gulpfile.js",
@@ -15,7 +15,7 @@
   "dependencies": {
     "browser-sync": "^2.23.6",
     "foundation-sites": "~6.4.0",
-    "motion-ui": "~1.2.2",
+    "motion-ui": "~1.2.2"
   },
   "devDependencies": {
     "gulp": "^3.9.0",

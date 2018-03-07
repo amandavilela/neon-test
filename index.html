@@ -16,9 +16,9 @@
       <article class="saldo__info">
         <span class="saldo__info__year">2017</span>
         <p class="saldo__info__greeting">Bem-vindo</p>
-        <ul class="grid-x saldo__carousel">
-          <li class="cell medium-4 large-4 small-12 saldo__carousel__card saldo__carousel__card--calendar left"></li>
-          <li class="cell medium-4 large-4 small-12 saldo__carousel__card saldo__carousel__card--light-blue middle">
+        <ul class="grid-x saldo__carousel" id="cards">
+          <li id="card-1" class="cell medium-4 large-4 small-12 saldo__carousel__card saldo__carousel__card--calendar left"></li>
+          <li id="card-2" class="cell medium-4 large-4 small-12 saldo__carousel__card saldo__carousel__card--light-blue middle">
             <ul class="saldo__carousel__list">
               <li>
                 <div class="icon-category"></div>
@@ -28,7 +28,7 @@
                 </div>
                 <a href="#" class="delete-purshase"></a>
               </li>
-              <li >
+              <li>
                 <div class="icon-category"></div>
                 <div class="description">
                   <span>Receba pagamentos</span>
@@ -78,14 +78,15 @@
               </li>
             </ul>
           </li>
-          <li class="cell medium-4 large-4 small-12 saldo__carousel__card saldo__carousel__card--calendar right"></li>
+          <li id="card-3" class="cell medium-4 large-4 small-12 saldo__carousel__card saldo__carousel__card--calendar right"></li>
         </ul>
-        <ul class="saldo__carousel__options">
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul class="saldo__carousel__options" id="options">
+          <li data-card="1"></li>
+          <li data-card="2" class="active-option"></li>
+          <li data-card="3"></li>
         </ul>
       </article>
     </main>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
